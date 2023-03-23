@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/v1/workouts HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/v1/workouts/hola HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/v1/workouts HTTP/1.1
+Content-Type: application/json
+
+{
+  "workout": "new workout"
+}
+
+###
+
+PATCH http://localhost:3000/api/v1/workouts/hola HTTP/1.1
+Content-Type: application/json
+
+{
+  "workout": "update workout"
+}
+
+###
+
+DELETE http://localhost:3000/api/v1/workouts/hola HTTP/1.1
