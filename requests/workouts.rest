@@ -2,7 +2,7 @@ GET http://localhost:3000/api/v1/workouts HTTP/1.1
 
 ###
 
-GET http://localhost:3000/api/v1/workouts/hola HTTP/1.1
+GET http://localhost:3000/api/v1/workouts/f4e6a29b-adb3-4924-8ecf-48a844686803 HTTP/1.1
 
 ###
 
@@ -10,7 +10,7 @@ POST http://localhost:3000/api/v1/workouts HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "Core Buster",
+  "name": "Hello World",
   "mode": "AMRAP 20",
   "equipment": [
     "rack",
@@ -31,13 +31,17 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/api/v1/workouts/hola HTTP/1.1
+PATCH http://localhost:3000/api/v1/workouts/f4e6a29b-adb3-4924-8ecf-48a844686803 HTTP/1.1
 Content-Type: application/json
 
 {
-  "workout": "update workout"
+  "exercises": [
+    "nothing",
+    "sleep",
+    "play videogames"
+  ]
 }
 
 ###
 
-DELETE http://localhost:3000/api/v1/workouts/hola HTTP/1.1
+DELETE http://localhost:3000/api/v1/workouts/f4e6a29b-adb3-4924-8ecf-48a844686803 HTTP/1.1
