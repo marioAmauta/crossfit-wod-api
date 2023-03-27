@@ -2,7 +2,7 @@ GET http://localhost:3000/api/v1/workouts HTTP/1.1
 
 ###
 
-GET http://localhost:3000/api/v1/workouts/f4e6a29b-adb3-4924-8ecf-48a844686803 HTTP/1.1
+GET http://localhost:3000/api/v1/workouts/83808181-05e2-4f13-b7ee-4fe451405ef4   HTTP/1.1
 
 ###
 
@@ -10,7 +10,7 @@ POST http://localhost:3000/api/v1/workouts HTTP/1.1
 Content-Type: application/json
 
 {
-  "name": "Hello World",
+  "name": "Hello World 1",
   "mode": "AMRAP 20",
   "equipment": [
     "rack",
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/api/v1/workouts/f4e6a29b-adb3-4924-8ecf-48a844686803 HTTP/1.1
+PATCH http://localhost:3000/api/v1/workouts/b06effdb-4dd4-4b86-87b9-58ac4a0de502 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -44,4 +44,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/v1/workouts/f4e6a29b-adb3-4924-8ecf-48a844686803 HTTP/1.1
+DELETE http://localhost:3000/api/v1/workouts/39c5927f-3cab-41ac-b13c-f4281cd078a8 HTTP/1.1
