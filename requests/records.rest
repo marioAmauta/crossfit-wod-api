@@ -1,0 +1,11 @@
+GET http://localhost:3000/api/v1/workouts/4a3d9aaa-608c-49a7-a004-66305ad4ab50/records   HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/v1/workouts/4a3d9aaa-608c-49a7-a004-66305ad4ab50/records HTTP/1.1
+Content-Type: application/json
+
+{
+  "record": "200 reps",
+  "memberId": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19"
+}

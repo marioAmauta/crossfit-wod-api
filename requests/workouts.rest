@@ -2,7 +2,7 @@ GET http://localhost:3000/api/v1/workouts HTTP/1.1
 
 ###
 
-GET http://localhost:3000/api/v1/workouts/83808181-05e2-4f13-b7ee-4fe451405ef4   HTTP/1.1
+GET http://localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6   HTTP/1.1
 
 ###
 
@@ -44,4 +44,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/v1/workouts/39c5927f-3cab-41ac-b13c-f4281cd078a8 HTTP/1.1
+DELETE http://localhost:3000/api/v1/workouts/5e38caf1-59c2-4f13-909d-58f7abb7d5dc HTTP/1.1
