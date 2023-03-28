@@ -1,9 +1,16 @@
 const DB = require('./db.json');
 const { saveToDatabase } = require('./utils');
 
-function getAllWorkouts() {
+function getAllWorkouts(filterParams) {
   try {
-    return DB.workouts;
+    let workouts = DB.workouts;
+
+    if (filterParams.mode) {
+      const filteredWorkouts = DB.workouts.filter(workout => workout.mode.toLowerCase().includes(filterParams.mode));
+      return filteredWorkouts.length > 0 ? filteredWorkouts : `Mode '${filterParams.mode}' was not found`;
+    }
+
+    return workouts;
   } catch (error) {
     throw {
       status: 500,
